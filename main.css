@@ -15,7 +15,14 @@ header{
     justify-content: space-between;
 }
 
-.header-logo, .header-icones{
+.header-logo{
+    margin: 0px;
+    display: flex;
+    width: 240px;
+}
+
+
+.header-icones{
     margin: 0px;
     display: flex;
 }
@@ -36,23 +43,46 @@ header{
     height: 45px;
 }
 
+.header-pesquisar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lupa{
+    width: 30px;
+    opacity: 30%;
+    
+}
+
+.button{
+    height: 38px;
+    width: 40px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 0 solid;
+    cursor: auto;
+    cursor: pointer;
+}
+
 .icones-container {
     width: 40px;
     height: 40px;
 }
 
 .icones-container:not(:first-child) {
-    margin-left: 12px;
+    margin-left: 15px;
 }
 
 .icones{
     margin: 0 25px 0 0;
     width: 40px;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
 
 .icones:hover{
-    width: 45px;
+    width: 43px;
+    cursor: pointer;
 }
 
 .setor{
@@ -139,21 +169,72 @@ header{
     
 }
 
-input:hover{
+
+.comprar:hover{
     color: rgb(255, 255, 255);
     background-color: rgba(43, 39, 39, 0.616);
+    cursor: pointer;
+}
+
+.email{
+    background-image: url(https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    /*-color: rgba(43, 39, 39, 0.616);*/
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 130px;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0 0 0 ;
+    padding: 15px 0 0 0;
+    display: block;
+    justify-content: center;
+}
+
+h5{
+    margin: 0 0 5px 0;
+}
+
+.cadastrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rodape{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 80px;
+    height: 100px;
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    margin-top: 50px;
 }
+
+.footer-icones{
+   display: flex;
+   justify-content: center;
+}
+
+.icones2{
+    width: 25px;
+    transition: width 0.1s ease-in-out;
+}
+
+.icones2:hover{
+    width: 27px;
+}
+
+.footer-icones-container {
+    width: 27px;
+    height: 27px;
+}
+
+.footer-icones-container:first-child{
+    margin-right: 12px;
+}
+
+
 
 
