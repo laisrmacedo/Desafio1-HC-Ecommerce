@@ -8,3 +8,14 @@ function nextSlide(){
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+
+let emailDigitado = document.querySelector(".button-email")
+let emailCadastrado = document.querySelector(".aviso-email")
+let avisoEmail = document.querySelector(".cadastrar-container")
+
+emailDigitado.addEventListener('click', avisar)
+
+function avisar(){
+    avisoEmail.innerHTML = " "
+    emailCadastrado.innerHTML="Seu email foi cadastrado!"
+}

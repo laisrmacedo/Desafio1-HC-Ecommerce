@@ -104,7 +104,7 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     margin-top: 371px;
-    background-color: rgba(43, 39, 39, 0.616);
+    background-color: rgba(43, 39, 39, 0.801);
     text-align: center;
     padding: 5px 0;
 }
@@ -177,28 +177,54 @@ header{
 }
 
 .email{
-    background-image: url(https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(/imagens/sale.png);
     background-size: cover;
     /*-color: rgba(43, 39, 39, 0.616);*/
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 130px;
+    height: 170px;
     font-size: 20px;
     text-align: center;
     margin: 50px 0 0 0 ;
     padding: 15px 0 0 0;
-    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.section-cadastrar{
+    background-color: rgba(43, 39, 39, 0.8);
+    width: 400px;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 h5{
     margin: 0 0 5px 0;
+    padding: 5px;
 }
 
-.cadastrar{
+.cadastrar-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.aviso-email{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input-email{
+    width: 250px; 
+    height: 16px; 
+    margin: 0 0 6px 0;
+}
+
+.button-email{
+    height: 22px; 
+    width: 258px;
 }
 
 .rodape{
