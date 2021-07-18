@@ -16,7 +16,7 @@ header{
 }
 
 .header-logo{
-    margin: 0px;
+    margin: 0 20px 0 0;
     display: flex;
     width: 240px;
 }
@@ -29,6 +29,10 @@ header{
 
 .header-icones:last-child{
     margin: 0 40px 0 0;
+}
+
+.header-icones:first-child {
+    margin: 0 0 0 20px;
 }
 
 .imgLogo{
@@ -47,12 +51,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
+    margin-right: 20px;
 }
 
 .lupa{
     width: 30px;
     opacity: 30%;
-    
 }
 
 .button{
@@ -72,6 +77,19 @@ header{
 
 .icones-container:not(:first-child) {
     margin-left: 15px;
+}
+
+.compras-carrinho{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 16px;
+    height: 16px;
+    border-radius: 9px;
+    text-align: center;
+    position: absolute;
+    right: 38px;
 }
 
 .icones{
@@ -162,18 +180,47 @@ header{
     margin-left: 5px;
     padding: 25px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .produtos:hover {
     box-shadow: 0 0 10px black;
     
 }
 
+.comprar{
+    color: rgb(0, 0, 0);
+    background-color: rgba(196, 196, 196, 0.432);
+    transition: opacity 0.3s ease-in-out;
+    border: 0 solid ;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.315);
+    padding: 5px;
+}
 
 .comprar:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgba(43, 39, 39, 0.616);
+    opacity: 80%;
     cursor: pointer;
+}
+
+.produto-carrinho{
+    font-size: 10px;
+    background-color: rgb(181, 240, 189);
+    color: rgb(8, 133, 56);
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.apagar{
+    display: none;
 }
 
 .email{
@@ -216,7 +263,7 @@ h5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.input-email{
+.input-email, .input-nome{
     width: 250px; 
     height: 16px; 
     margin: 0 0 6px 0;
