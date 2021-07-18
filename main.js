@@ -10,51 +10,42 @@ function nextSlide(){
 }
 
 /*ENVIO DE EMAIL*/
-let emailDigitado = document.querySelector(".button-email")
-let emailCadastrado = document.querySelector(".aviso-email")
-let avisoEmail = document.querySelector(".cadastrar-container")
+let emailDigitado = document.querySelector(".button-email");
+let emailCadastrado = document.querySelector(".aviso-email");
+let avisoEmail = document.querySelector(".cadastrar-container");
 
-emailDigitado.addEventListener('click', avisar)
+emailDigitado.addEventListener('click', avisar);
 
 function avisar(){
-    avisoEmail.innerHTML = " "
-    emailCadastrado.innerHTML="Seu email foi cadastrado!"
-
-    let nomeInput = document.querySelector(".input-nome").value
-    let nomeEmail = document.querySelector(".input-email").value
-    console.log(typeof nomeInput, typeof nomeEmail)
+    let nomeInput = document.querySelector(".input-nome").value;
+    let nomeEmail = document.querySelector(".input-email").value;
 
     window.localStorage.setItem(nomeEmail, JSON.stringify({
          nome: nomeInput,
          email: nomeEmail
     }))
-        
-    // const objetoSalvo = JSON.parse(window.localStorage.getItem("albert@gmail.com"))
-    // console.log(objetoSalvo.nome)
 
-    //window.localStorage.removeItem("")
+    avisoEmail.innerHTML = " ";
+    emailCadastrado.innerHTML="Seu email foi cadastrado!";
 }
-
-
-
 
 /*COMPRAR*/
 
 function addCarrinho(event) {
     const idDoItemClicado = event.target.id;
 
-    let botaoComprar = document.getElementById(idDoItemClicado)
-    let numCompras = document.querySelector(".compras-carrinho")
+    let botaoComprar = document.getElementById(idDoItemClicado);
+    let numCompras = document.querySelector(".compras-carrinho");
 
     const idDaDiv= "div-" + idDoItemClicado;
 
-    let clickComprar = document.getElementById(idDaDiv)
+    let clickComprar = document.getElementById(idDaDiv);
 
-    botaoComprar.classList.add("apagar")
-    clickComprar.classList.remove("apagar")
-    clickComprar.innerHTML = "PRODUTO ADICIONADO AO CARRINHO"
-    numCompras.classList.remove("apagar")
-    numCompras.innerHTML = parseInt(numCompras.innerHTML || 0) + 1
+    botaoComprar.classList.add("apagar");
+    clickComprar.classList.remove("apagar");
+    clickComprar.innerHTML = "PRODUTO ADICIONADO AO CARRINHO";
+    numCompras.classList.remove("apagar");
+    numCompras.innerHTML = parseInt(numCompras.innerHTML || 0) + 1;
 }
 
 
