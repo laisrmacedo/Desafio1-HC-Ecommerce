@@ -22,14 +22,15 @@
         </div>
         <div class="header-icones">
             <div class="icones-container">
-                <img class="icones" src="/imagens/icon2.png" alt="img-login">
-            </div>
-            <div class="icones-container">
-                <img class="icones" src="/imagens/map (2).png" alt="img-map">
+                <a href="/signin.html">
+                    <img class="icones" src="/imagens/icon2.png" alt="img-login">
+                </a>
             </div>
             <div class="icones-container">
                 <div class="compras-carrinho apagar"></div>
-                <img class="icones" src="/imagens/carrinho2.png" alt="img-carrinho">
+                <a href="/cart.html">
+                    <img class="icones" src="/imagens/carrinho2.png" alt="img-carrinho">
+                </a>
             </div>
         </div>
     </header>
@@ -57,30 +58,30 @@
     <section class="setor-produtos" id="link1">
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/rev1.png" alt="porcelanato">
-                <h4>PORCELANATO ESMALTADO</h4>
+                <img id="img1" src="/imagens/rev1.png" alt="porcelanato">
+                <h4 id="nome1">PORCELANATO ESMALTADO</h4>
                 <P style="text-decoration: line-through">DE: R$ 65,00/m²</P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 42,00/m²</p>
+                <p style="margin: 0 0 30px 0;" >POR: <span id="preco1">R$ 42,00/m²</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="1">
                 <div class="produto-carrinho apagar" id="div-1" ></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/rev2.png" alt="c-antiderrapante">
-                <h4>PISO CERÂMICO ANTIDERRAPANTE</h4>
+                <img id="img2" src="/imagens/rev2.png" alt="c-antiderrapante">
+                <h4 id="nome2">PISO CERÂMICO ANTIDERRAPANTE</h4>
                 <P style="text-decoration: line-through">DE: R$ 25,00/m² </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 18,50/m²</p>
+                <p style="margin: 0 0 30px 0;">POR: <span id="preco2">R$ 18,50/m²</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="2">
                 <div class="produto-carrinho apagar"  id="div-2"></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/rev3.png" alt="c-amadeirada">
-                <h4>PISO CERÂMICO AMADEIRADO</h4>
+                <img id="img3" src="/imagens/rev3.png" alt="c-amadeirada">
+                <h4 id="nome3">PISO CERÂMICO AMADEIRADO</h4>
                 <P style="text-decoration: line-through">DE: R$ 28,00/m² </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 20,99/m²</p>
+                <p style="margin: 0 0 30px 0;">POR: <span id="preco3">R$ 20,99/m² </span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="3">
                 <div class="produto-carrinho apagar"  id="div-3"></div>
             </div>
@@ -90,30 +91,30 @@
     <section class="setor-produtos" id="link2">
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/tinta1.png" alt="t-vermelha">
-                <h4>TINTA VERMELHA</h4>
+                <img id="img4" src="/imagens/tinta1.png" alt="t-vermelha">
+                <h4 id="nome4">TINTA VERMELHA</h4>
                 <P style="text-decoration: line-through">DE: R$ 42,00 </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 22,99</p>
+                <p style="margin: 0 0 30px 0;">POR:<span id="preco4"> R$ 22,99 </span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="4">
                 <div class="produto-carrinho apagar"  id="div-4"></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/tinta2.png" alt="t-verde">
-                <h4>TINTA VERDE</h4>
+                <img id="img5" src="/imagens/tinta2.png" alt="t-verde">
+                <h4 id="nome5">TINTA VERDE</h4>
                 <P style="text-decoration: line-through">DE: R$ 42,00 </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 22,99</p>
+                <p style="margin: 0 0 30px 0;">POR:<span id="preco5"> R$ 22,99</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="5">
                 <div class="produto-carrinho apagar"  id="div-5"></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/tinta3.png" alt="t-azul">
-                <h4>TINTA AZUL</h4>
+                <img id="img6" src="/imagens/tinta3.png" alt="t-azul">
+                <h4 id="nome6">TINTA AZUL</h4>
                 <P style="text-decoration: line-through">DE: R$ 42,00 </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 22,99</p>
+                <p style="margin: 0 0 30px 0;">POR:<span id="preco6"> R$ 22,99</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="6">
                 <div class="produto-carrinho apagar"  id="div-6"></div>
             </div>
@@ -123,30 +124,30 @@
     <section class="setor-produtos" id="link3">
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/telha1.png" alt="t-colonial">
-                <h4>TELHA COLONIAL</h4>
+                <img id="img7" src="/imagens/telha1.png" alt="t-colonial">
+                <h4 id="nome7">TELHA COLONIAL</h4>
                 <P style="text-decoration: line-through">DE: R$ 2,05/un </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 1,29/un</p>
+                <p style="margin: 0 0 30px 0;">POR: <span id="preco7">R$ 1,29/un</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="7">
                 <div class="produto-carrinho apagar"  id="div-7"></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/telha2.png" alt="t-romana">
-                <h4>TELHA ROMANA</h4>
+                <img id="img8" src="/imagens/telha2.png" alt="t-romana">
+                <h4 id="nome8">TELHA ROMANA</h4>
                 <P style="text-decoration: line-through">DE: R$ 2,85/un </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 1,99/un</p>
+                <p style="margin: 0 0 30px 0;">POR: <span id="preco8">R$ 1,99/un</span></R></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="8">
                 <div class="produto-carrinho apagar"  id="div-8"></div>
             </div>
         </div>
         <div class="caixa-produto">
             <div class="produtos">
-                <img src="/imagens/telha3.png" alt="t-francesa">
-                <h4>TELHA FRANCESA</h4>
+                <img id="img9" src="/imagens/telha3.png" alt="t-francesa">
+                <h4 id="nome9">TELHA FRANCESA</h4>
                 <P style="text-decoration: line-through">DE: R$ 2,99/un </P>
-                <p style="margin: 0 0 30px 0;">POR: R$ 2,19/un</p>
+                <p style="margin: 0 0 30px 0;">POR:<span id="preco9"> R$ 2,19/un</span></p>
                 <input class="comprar" type="button" value="COMPRE AGORA" onclick="addCarrinho(event)" id="9">
                 <div class="produto-carrinho apagar"  id="div-9"></div>
             </div>

@@ -1,7 +1,7 @@
 /*SLIDES*/
 var slides = document.querySelectorAll('.faixa-relampago .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+setInterval(nextSlide,2000);
 
 function nextSlide(){
     slides[currentSlide].className = 'slide';
@@ -19,10 +19,12 @@ emailDigitado.addEventListener('click', avisar);
 function avisar(){
     let nomeInput = document.querySelector(".input-nome").value;
     let nomeEmail = document.querySelector(".input-email").value;
+    let jump = "jump";
 
-    window.localStorage.setItem(nomeEmail, JSON.stringify({
-         nome: nomeInput,
-         email: nomeEmail
+    window.localStorage.setItem(jump, JSON.stringify({
+        jump: jump,
+        nome: nomeInput,
+        email: nomeEmail
     }))
 
     avisoEmail.innerHTML = " ";
@@ -46,7 +48,23 @@ function addCarrinho(event) {
     clickComprar.innerHTML = "PRODUTO ADICIONADO AO CARRINHO";
     numCompras.classList.remove("apagar");
     numCompras.innerHTML = parseInt(numCompras.innerHTML || 0) + 1;
+
+    // ARQUIVOS NO localStorage
+
+    let takeName = document.querySelector(`#nome${idDoItemClicado}`).innerHTML;
+    let takeImg = document.querySelector(`#img${idDoItemClicado}`).attributes.src.value;
+    let takePrice = document.querySelector(`#preco${idDoItemClicado}`).innerHTML;
+
+    window.localStorage.setItem(idDoItemClicado, JSON.stringify({
+        id: idDoItemClicado,
+        nome: takeName,
+        preco: takePrice
+    }));
+
 }
+
+
+
 
 
 
