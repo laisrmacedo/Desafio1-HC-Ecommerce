@@ -336,11 +336,12 @@ h5{
     justify-content: space-around;
     border-radius: 9px;
     box-shadow: 0 0 10px rgb(145, 144, 144);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .login-container p{
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .inputs-login{

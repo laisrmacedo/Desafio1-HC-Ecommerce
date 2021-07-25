@@ -52,7 +52,7 @@ function addCarrinho(event) {
     // ARQUIVOS NO localStorage
 
     let takeName = document.querySelector(`#nome${idDoItemClicado}`).innerHTML;
-    let takeImg = document.querySelector(`#img${idDoItemClicado}`).attributes.src.value;
+    // let takeImg = document.querySelector(`#img${idDoItemClicado}`).attributes.src.value;
     let takePrice = document.querySelector(`#preco${idDoItemClicado}`).innerHTML;
 
     window.localStorage.setItem(idDoItemClicado, JSON.stringify({

@@ -13,12 +13,13 @@ function criar(){
     let jumpConta = "jump";
 
     window.localStorage.setItem(jumpConta, JSON.stringify({
-        jumpConta: jumpConta,
+        jump: jumpConta,
         email: emailConta,
         cep: cepConta,
         senha: senhaConta
     }))
 
     loginConta.innerHTML = " ";
-    avisoConta.innerHTML="Sua conta foi criada com sucesso!";
+    loginConta.innerHTML="Sua conta foi criada com sucesso!";
+    console.log(avisoConta)
 }
